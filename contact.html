@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Neat Nest Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --color-primary: #5B8A72; --color-primary-light: #E8F0EC; --color-accent: #D4A574; --color-text: #2D3748; --color-text-light: #718096; --color-background: #FAFAF9; --color-white: #FFFFFF; --color-border: #E2E8F0; --font-heading: 'Cormorant Garamond', Georgia, serif; --font-body: 'Inter', -apple-system, sans-serif; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); color: var(--color-text); background: var(--color-background); line-height: 1.7; }
+    .site-header { background: var(--color-white); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem; }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .site-logo { font-family: var(--font-heading); font-size: 1.75rem; font-weight: 600; color: var(--color-primary); text-decoration: none; }
+    .site-logo span { color: var(--color-accent); }
+    .main-nav { display: flex; gap: 2rem; list-style: none; }
+    .main-nav a { color: var(--color-text); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    .page-header { background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-white) 100%); padding: 4rem 2rem; text-align: center; }
+    .page-header h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem; }
+    .page-content { max-width: 600px; margin: 0 auto; padding: 3rem 2rem; }
+    .page-content p { margin-bottom: 1.5rem; }
+    .contact-form { background: var(--color-white); padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+    .form-group input, .form-group textarea { width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: 8px; font-size: 1rem; font-family: inherit; }
+    .form-group textarea { min-height: 150px; resize: vertical; }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--color-primary); }
+    .submit-btn { background: var(--color-primary); color: white; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; width: 100%; }
+    .submit-btn:hover { background: #4A7260; }
+    .site-footer { background: var(--color-text); color: white; padding: 2rem; text-align: center; margin-top: 4rem; }
+    .site-footer a { color: rgba(255,255,255,0.7); }
+    @media (max-width: 768px) { .main-nav { display: none; } .page-header h1 { font-size: 2.25rem; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Neat Nest <span>Home</span></a>
+      <nav><ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="posts/best-pantry-organizers.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>Contact Us</h1>
+    <p style="color: var(--color-text-light);">Questions, suggestions, or just want to say hi?</p>
+  </div>
+
+  <div class="page-content">
+    <p>We'd love to hear from you! Whether you have a question about a product review, want to suggest a topic, or just want to share your own organization wins—drop us a line.</p>
+
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <p style="margin-top: 2rem; text-align: center; color: var(--color-text-light); font-size: 0.9rem;">We typically respond within 1-2 business days.</p>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Neat Nest Home • <a href="affiliate-disclosure.html">Affiliate Disclosure</a> • <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>

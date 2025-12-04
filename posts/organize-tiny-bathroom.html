@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Organize a Tiny Bathroom: 7 Space-Saving Ideas | Neat Nest Home</title>
+  <meta name="description" content="Maximize every inch of your small bathroom with these proven organization strategies. Renter-friendly tips and product recommendations included.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #5B8A72;
+      --color-primary-dark: #4A7260;
+      --color-primary-light: #E8F0EC;
+      --color-accent: #D4A574;
+      --color-accent-dark: #C4956A;
+      --color-text: #2D3748;
+      --color-text-light: #718096;
+      --color-background: #FAFAF9;
+      --color-white: #FFFFFF;
+      --color-border: #E2E8F0;
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --font-accent: 'Montserrat', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); color: var(--color-text); background: var(--color-background); line-height: 1.7; }
+
+    .site-header { background: var(--color-white); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .site-logo { font-family: var(--font-heading); font-size: 1.75rem; font-weight: 600; color: var(--color-primary); text-decoration: none; }
+    .site-logo span { color: var(--color-accent); }
+    .main-nav { display: flex; gap: 2rem; list-style: none; }
+    .main-nav a { color: var(--color-text); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    .main-nav a:hover { color: var(--color-primary); }
+
+    .article-header { background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-white) 100%); padding: 4rem 2rem 3rem; text-align: center; }
+    .article-header-inner { max-width: 800px; margin: 0 auto; }
+    .article-category { font-family: var(--font-accent); font-size: 0.8rem; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
+    .article-header h1 { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 600; line-height: 1.2; margin-bottom: 1rem; }
+    .article-meta { color: var(--color-text-light); font-size: 0.95rem; }
+
+    .article-content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    .article-content p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .article-content h2 { font-family: var(--font-heading); font-size: 2rem; margin: 2.5rem 0 1rem; color: var(--color-text); }
+    .article-content h3 { font-family: var(--font-heading); font-size: 1.5rem; margin: 2rem 0 1rem; }
+    .article-content h4 { font-size: 1.1rem; margin: 1.5rem 0 0.75rem; }
+    .article-content ul, .article-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+    .article-content li { margin-bottom: 0.5rem; }
+
+    .product-box { background: var(--color-white); border: 2px solid var(--color-primary); border-radius: 12px; padding: 2rem; margin: 2rem 0; position: relative; }
+    .product-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--color-primary); color: white; padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .product-box h3 { font-family: var(--font-heading); font-size: 1.5rem; text-align: center; margin-bottom: 0.5rem; }
+    .product-subtitle { text-align: center; color: var(--color-text-light); margin-bottom: 1rem; }
+    .product-rating { text-align: center; margin-bottom: 1rem; }
+    .stars { color: #F4A524; font-size: 1.2rem; }
+    .product-features { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+    .product-cta { display: block; background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark)); color: white; text-align: center; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+    .product-cta:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(212, 165, 116, 0.4); }
+
+    .tip-box { background: var(--color-primary-light); border-left: 4px solid var(--color-primary); padding: 1.5rem; border-radius: 0 8px 8px 0; margin: 2rem 0; }
+    .tip-box strong { color: var(--color-primary); }
+
+    .warning-box { background: #FFF3E0; border-left: 4px solid #FF9800; padding: 1.5rem; border-radius: 0 8px 8px 0; margin: 2rem 0; }
+    .warning-box strong { color: #E65100; }
+
+    .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .step-card { background: var(--color-primary-light); padding: 1.25rem; border-radius: 8px; }
+    .step-card strong { display: block; margin-bottom: 0.5rem; }
+    .step-card p { font-size: 0.9rem; margin: 0; }
+
+    .toc { background: #F5F5F5; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
+    .toc-title { font-weight: 700; margin-bottom: 0.75rem; }
+    .toc ul { margin: 0; padding-left: 1.25rem; columns: 2; }
+    .toc li { margin-bottom: 0.5rem; }
+    .toc a { color: var(--color-primary); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+
+    .site-footer { background: var(--color-text); color: white; padding: 2rem; text-align: center; margin-top: 4rem; }
+    .site-footer a { color: rgba(255,255,255,0.7); }
+
+    @media (max-width: 768px) {
+      .main-nav { display: none; }
+      .article-header h1 { font-size: 2rem; }
+      .toc ul { columns: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo">Neat Nest <span>Home</span></a>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="best-pantry-organizers.html">Reviews</a></li>
+          <li><a href="organize-tiny-bathroom.html">Guides</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-header">
+    <div class="article-header-inner">
+      <span class="article-category">Bathroom & Linen • Small Spaces</span>
+      <h1>How to Organize a Tiny Bathroom: 7 Space-Saving Ideas That Actually Work</h1>
+      <p class="article-meta">Updated December 2025 • 10 min read</p>
+    </div>
+  </div>
+
+  <article class="article-content">
+    <p style="font-size: 1.15rem;">Small bathroom, big frustration? You're not alone. When you're dealing with limited counter space, one tiny cabinet, and zero storage, staying organized feels impossible.</p>
+
+    <p>Good news: a small bathroom doesn't have to mean a cluttered one. Here are 7 space-saving strategies that work—even in the tiniest bathrooms.</p>
+
+    <div class="toc">
+      <p class="toc-title">Jump to:</p>
+      <ul>
+        <li><a href="#step-1">1. Clear the Counters</a></li>
+        <li><a href="#step-2">2. Maximize Under-Sink</a></li>
+        <li><a href="#step-3">3. Use the Door</a></li>
+        <li><a href="#step-4">4. Go Vertical</a></li>
+        <li><a href="#step-5">5. Declutter Products</a></li>
+        <li><a href="#step-6">6. Add Hidden Storage</a></li>
+        <li><a href="#step-7">7. Create Zones</a></li>
+      </ul>
+    </div>
+
+    <h2 id="step-1">1. Clear the Counters (Yes, All of Them)</h2>
+
+    <p>Counter space in a small bathroom is precious. Every item sitting on the counter makes the room feel smaller and more cluttered.</p>
+
+    <p><strong>The goal:</strong> Only 3-5 items max on your counter. Everything else gets stored.</p>
+
+    <h4>What to keep out:</h4>
+    <ul>
+      <li>Hand soap</li>
+      <li>One decorative item (plant, candle)</li>
+      <li>Items you use multiple times daily</li>
+    </ul>
+
+    <h4>What to put away:</h4>
+    <ul>
+      <li>Toothbrush (use a wall-mounted holder)</li>
+      <li>Hair tools (store in a drawer or cabinet)</li>
+      <li>Skincare products</li>
+      <li>Backup supplies</li>
+    </ul>
+
+    <h2 id="step-2">2. Maximize Under-Sink Storage</h2>
+
+    <p>The cabinet under your sink is prime real estate, but most people waste it with disorganized piles. Here's how to fix that:</p>
+
+    <h4>The stackable bin system:</h4>
+    <ol>
+      <li><strong>Work around the pipes</strong> — Measure your usable space carefully</li>
+      <li><strong>Use stackable drawers</strong> — These let you pull out items without digging</li>
+      <li><strong>Add a tension rod</strong> — Hang spray bottles to free up floor space</li>
+      <li><strong>Use door space</strong> — Attach a small organizer inside the cabinet door</li>
+    </ol>
+
+    <div class="product-box">
+      <span class="product-badge">TOP PICK</span>
+      <h3>SimpleHouseware Under Sink 2-Tier Organizer</h3>
+      <p class="product-subtitle">Adjustable shelves work around pipes</p>
+      <div class="product-rating">
+        <span class="stars">★★★★★</span> 4.7 (28,000+ reviews)
+      </div>
+      <ul class="product-features">
+        <li>Expandable width (15" to 25")</li>
+        <li>Adjustable panels work around pipes</li>
+        <li>Sturdy metal construction</li>
+        <li>No tools needed for assembly</li>
+      </ul>
+      <a href="https://www.amazon.com/dp/B07V3BZQXW?tag=neatnesthome-20" target="_blank" rel="nofollow noopener sponsored" class="product-cta">Check Price on Amazon</a>
+    </div>
+
+    <h2 id="step-3">3. Use the Back of the Door</h2>
+
+    <p>The back of your bathroom door (or cabinet doors) is often completely wasted space. Fix that with:</p>
+
+    <ul>
+      <li><strong>Over-door organizers:</strong> Great for hair tools, brushes, and styling products</li>
+      <li><strong>Towel bars:</strong> Hang towels without taking up wall space</li>
+      <li><strong>Hooks:</strong> For robes, hair ties, or hanging bags</li>
+    </ul>
+
+    <div class="tip-box">
+      <strong>Renter Tip:</strong> Look for "no drill" or "adhesive" options. Most over-door organizers just hook over the top—no damage to walls or doors.
+    </div>
+
+    <h2 id="step-4">4. Go Vertical</h2>
+
+    <p>When you can't go wide, go up. Vertical space is your secret weapon in a small bathroom.</p>
+
+    <h4>Vertical storage ideas:</h4>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <strong>Over-Toilet Shelving</strong>
+        <p>The most underused space in any bathroom. Add shelves for towels, baskets, and decor.</p>
+      </div>
+      <div class="step-card">
+        <strong>Corner Shelves</strong>
+        <p>Shower corners, wall corners—turn dead space into storage.</p>
+      </div>
+      <div class="step-card">
+        <strong>Shower Caddies</strong>
+        <p>Tension rod or hanging caddies keep bottles off the tub floor.</p>
+      </div>
+    </div>
+
+    <h2 id="step-5">5. Ruthlessly Declutter Your Products</h2>
+
+    <p>Here's the truth: no amount of clever storage will help if you have too much stuff. Before buying organizers, declutter.</p>
+
+    <h4>Toss or donate:</h4>
+    <ul>
+      <li>Expired products (check the PAO symbol—period after opening)</li>
+      <li>Samples you'll never use</li>
+      <li>Duplicate products (how many half-empty shampoo bottles do you have?)</li>
+      <li>Products that didn't work for you</li>
+      <li>Old makeup (mascara: 3 months, foundation: 1 year)</li>
+    </ul>
+
+    <div class="warning-box">
+      <strong>Reality Check:</strong> Most people use the same 10-15 products regularly. Everything else is just taking up space.
+    </div>
+
+    <h2 id="step-6">6. Add Hidden Storage</h2>
+
+    <p>Get creative with storage that does double duty:</p>
+
+    <ul>
+      <li><strong>Medicine cabinet mirror:</strong> Replace a flat mirror with a recessed cabinet</li>
+      <li><strong>Storage ladder:</strong> Lean a decorative ladder for towels and baskets</li>
+      <li><strong>Baskets on shelves:</strong> Contain items while looking intentional</li>
+      <li><strong>Drawer organizers:</strong> If you have drawers, maximize them with dividers</li>
+    </ul>
+
+    <h2 id="step-7">7. Create Zones</h2>
+
+    <p>Even in a tiny bathroom, organizing by "zones" helps keep things tidy:</p>
+
+    <div class="step-grid">
+      <div class="step-card">
+        <strong>Daily Zone</strong>
+        <p>Toothbrush, face wash, moisturizer—items used morning and night. Keep most accessible.</p>
+      </div>
+      <div class="step-card">
+        <strong>Hair Zone</strong>
+        <p>Hair tools, products, and accessories together in one drawer or basket.</p>
+      </div>
+      <div class="step-card">
+        <strong>Backup Zone</strong>
+        <p>Extra toilet paper, refills, backstock. Can be less accessible (under sink, high shelf).</p>
+      </div>
+      <div class="step-card">
+        <strong>Cleaning Zone</strong>
+        <p>Toilet brush, cleaning supplies. Under sink with a caddy you can grab and go.</p>
+      </div>
+    </div>
+
+    <h2>You've Got This</h2>
+
+    <p>Organizing a tiny bathroom is about working smarter, not harder. Start by decluttering, then add storage solutions one at a time. You'll be amazed at how much more functional (and peaceful) your small bathroom can feel.</p>
+
+    <p><strong>Start here:</strong> Clear your counters and add one under-sink organizer. That alone will make a huge difference.</p>
+
+    <div class="tip-box">
+      <strong>Related Reading:</strong><br>
+      <a href="simplehouseware-review.html">SimpleHouseware Under Sink Organizer Review →</a><br>
+      <a href="30-day-declutter-plan.html">30-Day Declutter Challenge →</a><br>
+      <a href="best-pantry-organizers.html">Best Pantry Organizers →</a>
+    </div>
+
+  </article>
+
+  <footer class="site-footer">
+    <p>© 2025 Neat Nest Home • <a href="../affiliate-disclosure.html">Affiliate Disclosure</a> • <a href="../privacy-policy.html">Privacy Policy</a></p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.7;">As an Amazon Associate, we earn from qualifying purchases.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30-Day Declutter Challenge: Transform Your Home | Neat Nest Home</title>
+  <meta name="description" content="A practical 30-day decluttering plan that breaks down the overwhelming task into daily 15-minute sessions. Free printable checklist included.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #5B8A72;
+      --color-primary-dark: #4A7260;
+      --color-primary-light: #E8F0EC;
+      --color-accent: #D4A574;
+      --color-accent-dark: #C4956A;
+      --color-text: #2D3748;
+      --color-text-light: #718096;
+      --color-background: #FAFAF9;
+      --color-white: #FFFFFF;
+      --color-border: #E2E8F0;
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --font-accent: 'Montserrat', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); color: var(--color-text); background: var(--color-background); line-height: 1.7; }
+
+    .site-header { background: var(--color-white); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .site-logo { font-family: var(--font-heading); font-size: 1.75rem; font-weight: 600; color: var(--color-primary); text-decoration: none; }
+    .site-logo span { color: var(--color-accent); }
+    .main-nav { display: flex; gap: 2rem; list-style: none; }
+    .main-nav a { color: var(--color-text); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+
+    .article-header { background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-white) 100%); padding: 4rem 2rem 3rem; text-align: center; }
+    .article-header-inner { max-width: 800px; margin: 0 auto; }
+    .article-category { font-family: var(--font-accent); font-size: 0.8rem; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
+    .article-header h1 { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 600; line-height: 1.2; margin-bottom: 1rem; }
+    .article-meta { color: var(--color-text-light); font-size: 0.95rem; }
+
+    .article-content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    .article-content p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+    .article-content h2 { font-family: var(--font-heading); font-size: 2rem; margin: 2.5rem 0 1rem; color: var(--color-text); }
+    .article-content ul, .article-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+    .article-content li { margin-bottom: 0.5rem; }
+
+    .week-section { background: var(--color-white); border-radius: 12px; padding: 2rem; margin: 2rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .week-title { font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-primary); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-primary-light); }
+
+    .day-item { display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--color-border); }
+    .day-item:last-child { border-bottom: none; }
+    .day-number { background: var(--color-primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+    .day-content h4 { margin: 0 0 0.25rem; font-size: 1rem; }
+    .day-content p { margin: 0; font-size: 0.9rem; color: var(--color-text-light); }
+
+    .checklist-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.5rem 0; }
+    .checkbox { width: 20px; height: 20px; border: 2px solid var(--color-primary); border-radius: 4px; flex-shrink: 0; margin-top: 2px; }
+
+    .callout { background: var(--color-primary-light); border-left: 4px solid var(--color-primary); padding: 1.5rem; border-radius: 0 8px 8px 0; margin: 2rem 0; }
+    .callout strong { color: var(--color-primary); }
+
+    .product-mention { background: var(--color-white); border: 1px solid var(--color-border); border-radius: 8px; padding: 1rem; margin: 1rem 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .product-mention strong { color: var(--color-text); }
+    .product-mention a { color: var(--color-accent); font-weight: 600; text-decoration: none; }
+
+    .site-footer { background: var(--color-text); color: white; padding: 2rem; text-align: center; margin-top: 4rem; }
+    .site-footer a { color: rgba(255,255,255,0.7); }
+
+    @media (max-width: 768px) {
+      .main-nav { display: none; }
+      .article-header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="site-logo">Neat Nest <span>Home</span></a>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="best-pantry-organizers.html">Reviews</a></li>
+          <li><a href="organize-tiny-bathroom.html">Guides</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-header">
+    <div class="article-header-inner">
+      <span class="article-category">Checklists & Plans</span>
+      <h1>30-Day Declutter Challenge: Transform Your Home Room by Room</h1>
+      <p class="article-meta">Updated December 2025 • 15 min read</p>
+    </div>
+  </div>
+
+  <article class="article-content">
+    <p style="font-size: 1.15rem;">Feeling overwhelmed by clutter? You're not alone. The thought of decluttering an entire home can feel paralyzing—so most people never start.</p>
+
+    <p>This 30-day challenge breaks the overwhelming task into small, manageable daily sessions. Just 15-30 minutes a day, one area at a time. By the end of the month, you'll have touched every major area of your home.</p>
+
+    <div class="callout">
+      <strong>The Rules:</strong>
+      <ul style="margin: 1rem 0 0; padding-left: 1.25rem;">
+        <li>15-30 minutes per day maximum</li>
+        <li>Focus only on that day's task</li>
+        <li>Have three bags ready: Trash, Donate, Relocate</li>
+        <li>Done is better than perfect</li>
+      </ul>
+    </div>
+
+    <h2>Before You Start</h2>
+    <p>Gather your supplies:</p>
+    <ul>
+      <li>Trash bags</li>
+      <li>Donation boxes or bags</li>
+      <li>A timer (your phone works)</li>
+      <li>This checklist (bookmark this page!)</li>
+    </ul>
+
+    <!-- WEEK 1 -->
+    <div class="week-section">
+      <h3 class="week-title">Week 1: Kitchen & Pantry</h3>
+
+      <div class="day-item">
+        <div class="day-number">1</div>
+        <div class="day-content">
+          <h4>Expired Food Purge</h4>
+          <p>Check every expiration date in your pantry and fridge. Toss anything expired.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">2</div>
+        <div class="day-content">
+          <h4>Tupperware & Food Storage</h4>
+          <p>Match lids to containers. Recycle anything without a match or that's stained/warped.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">3</div>
+        <div class="day-content">
+          <h4>Utensil Drawer</h4>
+          <p>Remove duplicates (how many spatulas do you really need?). Keep only what you actually use.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">4</div>
+        <div class="day-content">
+          <h4>Under the Sink</h4>
+          <p>Toss old sponges, dried-out cleaners, and mystery bottles. Consolidate duplicates.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">5</div>
+        <div class="day-content">
+          <h4>Spice Cabinet</h4>
+          <p>Spices lose potency after 1-3 years. Smell each one—if it smells like nothing, toss it.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">6</div>
+        <div class="day-content">
+          <h4>Mugs & Glasses</h4>
+          <p>Keep your favorites, donate the rest. Most households need 8-12 mugs max.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">7</div>
+        <div class="day-content">
+          <h4>Junk Drawer</h4>
+          <p>Empty it completely. Sort into categories. Only put back what you actually need.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-mention">
+      <div>
+        <strong>Helpful for Week 1:</strong> Vtopmart Pantry Containers
+      </div>
+      <a href="https://www.amazon.com/dp/B07VFCNTJ8?tag=neatnesthome-20" target="_blank" rel="nofollow noopener sponsored">See on Amazon →</a>
+    </div>
+
+    <!-- WEEK 2 -->
+    <div class="week-section">
+      <h3 class="week-title">Week 2: Bathroom & Bedroom</h3>
+
+      <div class="day-item">
+        <div class="day-number">8</div>
+        <div class="day-content">
+          <h4>Medicine Cabinet</h4>
+          <p>Check expiration dates on all medications. Dispose of expired meds properly.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">9</div>
+        <div class="day-content">
+          <h4>Bathroom Counter & Drawers</h4>
+          <p>Toss old makeup, empty bottles, and products that didn't work for you.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">10</div>
+        <div class="day-content">
+          <h4>Under Bathroom Sink</h4>
+          <p>Consolidate half-empty products. Toss anything you haven't used in 6+ months.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">11</div>
+        <div class="day-content">
+          <h4>Towels & Linens</h4>
+          <p>Keep 2-3 sets per person. Donate old, stained, or threadbare towels.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">12</div>
+        <div class="day-content">
+          <h4>Nightstands</h4>
+          <p>Clear surfaces and drawers. Keep only essentials within arm's reach.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">13</div>
+        <div class="day-content">
+          <h4>Under the Bed</h4>
+          <p>Pull everything out. Only put back seasonal items in proper storage containers.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">14</div>
+        <div class="day-content">
+          <h4>Dresser Drawers</h4>
+          <p>Fold and organize. Donate clothes that don't fit or you haven't worn in a year.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-mention">
+      <div>
+        <strong>Helpful for Week 2:</strong> SimpleHouseware Under Sink Organizer
+      </div>
+      <a href="https://www.amazon.com/dp/B07V3BZQXW?tag=neatnesthome-20" target="_blank" rel="nofollow noopener sponsored">See on Amazon →</a>
+    </div>
+
+    <!-- WEEK 3 -->
+    <div class="week-section">
+      <h3 class="week-title">Week 3: Closets & Storage</h3>
+
+      <div class="day-item">
+        <div class="day-number">15</div>
+        <div class="day-content">
+          <h4>Closet - Hanging Clothes</h4>
+          <p>Turn all hangers backwards. In 6 months, donate anything still turned around.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">16</div>
+        <div class="day-content">
+          <h4>Closet - Shoes</h4>
+          <p>Keep only shoes you've worn in the past year. Toss worn-out pairs.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">17</div>
+        <div class="day-content">
+          <h4>Closet - Accessories</h4>
+          <p>Belts, scarves, bags, jewelry. Keep favorites, donate the rest.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">18</div>
+        <div class="day-content">
+          <h4>Coat Closet</h4>
+          <p>One coat per season per person is usually enough. Donate extras.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">19</div>
+        <div class="day-content">
+          <h4>Linen Closet</h4>
+          <p>Keep 2-3 sheet sets per bed. Donate old bedding to animal shelters.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">20</div>
+        <div class="day-content">
+          <h4>Storage Bins/Boxes</h4>
+          <p>Open every box. If you forgot what's inside, you probably don't need it.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">21</div>
+        <div class="day-content">
+          <h4>Seasonal Items</h4>
+          <p>Holiday decor, seasonal clothes. Consolidate and label clearly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEEK 4 -->
+    <div class="week-section">
+      <h3 class="week-title">Week 4: Living Areas & Finish Strong</h3>
+
+      <div class="day-item">
+        <div class="day-number">22</div>
+        <div class="day-content">
+          <h4>Books & Magazines</h4>
+          <p>Keep only books you'll reread or reference. Donate the rest to your library.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">23</div>
+        <div class="day-content">
+          <h4>Entertainment Center</h4>
+          <p>Old DVDs, video games, cables. If you've gone digital, let the physical go.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">24</div>
+        <div class="day-content">
+          <h4>Paper Clutter</h4>
+          <p>Mail, receipts, documents. Shred what you don't need, file the rest.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">25</div>
+        <div class="day-content">
+          <h4>Kids' Toys (if applicable)</h4>
+          <p>Involve kids if possible. Donate broken toys and ones they've outgrown.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">26</div>
+        <div class="day-content">
+          <h4>Garage/Storage Space</h4>
+          <p>Tools you don't use, broken items, things you're "saving just in case."</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">27</div>
+        <div class="day-content">
+          <h4>Digital Declutter</h4>
+          <p>Unsubscribe from emails, delete unused apps, organize your desktop.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">28</div>
+        <div class="day-content">
+          <h4>Car</h4>
+          <p>Trunk, glove box, door pockets. Remove trash and items that belong inside.</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">29</div>
+        <div class="day-content">
+          <h4>Donation Drop-off</h4>
+          <p>Take all your donation bags to their final destination. Don't let them linger!</p>
+        </div>
+      </div>
+
+      <div class="day-item">
+        <div class="day-number">30</div>
+        <div class="day-content">
+          <h4>Celebrate & Plan Maintenance</h4>
+          <p>Take before/after photos. Set a monthly reminder to do a quick declutter.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>What's Next?</h2>
+
+    <p>Congratulations—you did it! Now the key is maintenance. Schedule a 15-minute weekly tidying session to prevent clutter from building up again.</p>
+
+    <p><strong>Keep the momentum going:</strong></p>
+    <ul>
+      <li><a href="best-pantry-organizers.html">Best Pantry Organizers to Keep Things Tidy →</a></li>
+      <li><a href="organize-tiny-bathroom.html">How to Organize a Tiny Bathroom →</a></li>
+      <li><a href="small-closet-solutions.html">Small Closet Storage Solutions →</a></li>
+    </ul>
+
+  </article>
+
+  <footer class="site-footer">
+    <p>© 2025 Neat Nest Home • <a href="../affiliate-disclosure.html">Affiliate Disclosure</a> • <a href="../privacy-policy.html">Privacy Policy</a></p>
+    <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.7;">As an Amazon Associate, we earn from qualifying purchases.</p>
+  </footer>
+
+</body>
+</html>
