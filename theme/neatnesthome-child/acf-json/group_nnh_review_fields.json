@@ -1,0 +1,187 @@
+{
+  "key": "group_nnh_review_fields",
+  "title": "Product Review Fields",
+  "fields": [
+    {
+      "key": "field_nnh_product_name",
+      "label": "Product Name",
+      "name": "product_name",
+      "type": "text",
+      "instructions": "The full product name as it appears on Amazon",
+      "required": 1,
+      "placeholder": "e.g., SimpleHouseware Over Door Pantry Organizer"
+    },
+    {
+      "key": "field_nnh_subtitle",
+      "label": "Short Subtitle",
+      "name": "product_subtitle",
+      "type": "text",
+      "instructions": "A brief tagline or descriptor",
+      "required": 0,
+      "placeholder": "e.g., 6-Tier Space-Saving Solution"
+    },
+    {
+      "key": "field_nnh_amazon_url",
+      "label": "Amazon URL",
+      "name": "amazon_url",
+      "type": "url",
+      "instructions": "Full Amazon product URL (affiliate tag will be added automatically)",
+      "required": 1
+    },
+    {
+      "key": "field_nnh_price_range",
+      "label": "Price Range",
+      "name": "price_range",
+      "type": "text",
+      "instructions": "Price or price range",
+      "required": 0,
+      "placeholder": "e.g., $25-$35"
+    },
+    {
+      "key": "field_nnh_rating",
+      "label": "Rating",
+      "name": "rating",
+      "type": "number",
+      "instructions": "Your rating out of 5 (e.g., 4.5)",
+      "required": 0,
+      "min": 1,
+      "max": 5,
+      "step": 0.1,
+      "default_value": 4.5
+    },
+    {
+      "key": "field_nnh_best_for",
+      "label": "Best For",
+      "name": "best_for",
+      "type": "text",
+      "instructions": "Who is this product ideal for?",
+      "required": 0,
+      "placeholder": "e.g., Small apartments, renters, or anyone short on pantry space"
+    },
+    {
+      "key": "field_nnh_pros",
+      "label": "Pros",
+      "name": "pros",
+      "type": "repeater",
+      "instructions": "List the product's advantages",
+      "required": 0,
+      "min": 0,
+      "max": 10,
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_nnh_pro_item",
+          "label": "Pro",
+          "name": "pro",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_nnh_cons",
+      "label": "Cons",
+      "name": "cons",
+      "type": "repeater",
+      "instructions": "List any drawbacks",
+      "required": 0,
+      "min": 0,
+      "max": 10,
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_nnh_con_item",
+          "label": "Con",
+          "name": "con",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_nnh_key_features",
+      "label": "Key Features",
+      "name": "key_features",
+      "type": "repeater",
+      "instructions": "3-5 key features to highlight",
+      "required": 0,
+      "min": 0,
+      "max": 10,
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_nnh_feature_item",
+          "label": "Feature",
+          "name": "feature",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_nnh_product_image",
+      "label": "Product Image",
+      "name": "product_image",
+      "type": "image",
+      "instructions": "Upload a product image (optional - featured image can be used instead)",
+      "required": 0,
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_nnh_faq_items",
+      "label": "FAQ Items",
+      "name": "faq_items",
+      "type": "repeater",
+      "instructions": "Add FAQ questions and answers for schema markup",
+      "required": 0,
+      "min": 0,
+      "max": 20,
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_nnh_faq_question",
+          "label": "Question",
+          "name": "question",
+          "type": "text"
+        },
+        {
+          "key": "field_nnh_faq_answer",
+          "label": "Answer",
+          "name": "answer",
+          "type": "textarea"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      },
+      {
+        "param": "post_category",
+        "operator": "==",
+        "value": "category:reviews"
+      }
+    ],
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "post"
+      },
+      {
+        "param": "post_category",
+        "operator": "==",
+        "value": "category:roundups"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "active": true,
+  "description": "Fields for product review and roundup posts"
+}
